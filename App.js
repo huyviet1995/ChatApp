@@ -5,7 +5,7 @@ import {Navigator} from './Navigator.js';
 import {addNavigationHelpers,createAppContainer} from 'react-navigation';
 
 
-const AppNavigator = createAppContainer(Navigator)
+const AppNavigator = createAppContainer(Navigator);
 export default class App extends Component {
   static propTypes = {
     dispatch: PropTypes.func.isRequired,
@@ -18,9 +18,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <View>
-        <AppNavigator ref={nav => {this.navigator = nav;}}>{console.log(AppNavigator)}</AppNavigator> 
-      </View>
+      <AppNavigator>Welcome</AppNavigator>
     )
   }
 
@@ -29,7 +27,7 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'blue',
+    backgroundColor: 'yellow',
     alignItems: 'center',
     justifyContent: 'center',
   },

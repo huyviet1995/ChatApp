@@ -2,17 +2,10 @@ import {createStackNavigator, createBottomTabNavigator} from 'react-navigation';
 import {Home} from './screens/Home.js';
 import {Chat} from './screens/Chat.js';
 
-const HomeScreen = createStackNavigator({
-  Home: {screen: Home}
-});
-const ChatScreen = createStackNavigator({
-  Chat: {screen: Chat}
-});
-
-export const Navigator = createBottomTabNavigator(
+export const Navigator = createStackNavigator(
   {
-    Home: {screen: HomeScreen},
-    Chat: {screen: ChatScreen},
+    Home: {screen: Home},
+    Chat: {screen: Chat},
   }, {
   initialRouteName: 'Home',
   tabBarPosition: 'bottom',
