@@ -24,6 +24,11 @@
     ],
     "ios": {
       "supportsTablet": true
+    },
+    "facebookScheme":"373756423441928",
+    "facebookAppId":"fb373756423441928",
+    "android" : {
+      "package" : "com.coderschool.chatapp",
     }
   }
 }

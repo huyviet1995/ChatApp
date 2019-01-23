@@ -35,3 +35,6 @@ const styles = StyleSheet.create({
     flex: 1,
   }
 })
+
+
+keytool -importkeystore -srckeystore debug.keystore -destkeystore debug.keystore -deststoretype pkcs12

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {StyleSheet, Text, View} from 'react-native';
 import {Navigator} from './Navigator.js';
-import {addNavigationHelpers,createAppContainer} from 'react-navigation';
+import {addNavigationHelpers, createAppContainer} from 'react-navigation';
 
 
 const AppNavigator = createAppContainer(Navigator);
@@ -18,7 +18,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <AppNavigator>Welcome</AppNavigator>
+     <AppNavigator></AppNavigator>
     )
   }
 
